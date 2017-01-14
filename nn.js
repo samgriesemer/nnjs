@@ -131,3 +131,7 @@ function mpow(m, p) {
 //xor data
 X = Matrix.create([[0,0],[0,1],[1,0],[1,1]]);
 y = Matrix.create([[0],[1],[1],[0]]);
+
+//X = Matrix.create([[1,0,1,0],[1,0,0,1],[1,1,0,1],[0,1,0,0],[0,0,1,0]]);
+//y = Matrix.create([[1],[1],[1],[0],[0]]);
+//p = Matrix.create([[1,0,0,0]]);
