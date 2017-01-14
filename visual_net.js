@@ -97,8 +97,7 @@ function draw() {
 			for (var j=0; j<nodes[i].length; j++) {
 				if (i != nodes.length-1) {
 					for(var k=0; k<nodes[i+1].length; k++) {
-						w_temp = neural.w[i].minor(1,2,neural.w[i].rows(),
-															 neural.w[i].cols()-1);
+						w_temp = neural.w[i].minor(1,2,neural.w[i].rows(),neural.w[i].cols()-1);
 						weight = w_temp.e(k+1,j+1);
 						if (weight>=0) { 
 							stroke(clr[0][0],clr[0][1],clr[0][2]); 
