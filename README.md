@@ -1,3 +1,3 @@
 # Neural Network Visualization
 
-This repo includes the JS files behind the visualization at typeload.com/nn
+This repo includes the JS files behind the visualization at www.typeload.com/nn
