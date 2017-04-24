@@ -78,13 +78,10 @@ NN.prototype.cost = function(X, Y) {
 }
 
 NN.prototype.run = function(X, Y, batch_size, iters) {
-	//this.cost(X, Y, false);
-	//cost_list = [this.err];
-	//console.log("Initial Cost:", this.err);
 	
 	for (var i=0; i<iters; i++) {
 
-		//set batch indicies
+		// set batch indicies
 		ind = (batch_size * i) % X.rows() + 1;
 		
 		// initialize batches
@@ -98,7 +95,7 @@ NN.prototype.run = function(X, Y, batch_size, iters) {
 	}
 }
 
-////////
+// matrix functions //
 
 function add_s(m, s) {
 	r = m.map(function(x) { return x+s; });
@@ -126,12 +123,6 @@ function mpow(m, p) {
 	return r;
 }
 
-////////
-
-//xor data
+// xor data
 X = Matrix.create([[0,0],[0,1],[1,0],[1,1]]);
 y = Matrix.create([[0],[1],[1],[0]]);
-
-//X = Matrix.create([[1,0,1,0],[1,0,0,1],[1,1,0,1],[0,1,0,0],[0,0,1,0]]);
-//y = Matrix.create([[1],[1],[1],[0],[0]]);
-//p = Matrix.create([[1,0,0,0]]);
