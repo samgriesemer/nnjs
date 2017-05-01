@@ -1,3 +1,6 @@
+// MIT License
+// Sam Griesemer
+
 layers     = [X.cols(),5,y.cols()];
 epsilon    = 1.0;
 lambda     = 0.1;
