@@ -1,5 +1,5 @@
 // MIT License
-// Sam Griesemer
+// Sam Griesemer (typeload.com)
 
 function NN(layers, epsilon, lambda, _alpha, regression) {
 	this.regression = regression;
