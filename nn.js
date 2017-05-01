@@ -1,3 +1,6 @@
+// MIT License
+// Sam Griesemer
+
 function NN(layers, epsilon, lambda, _alpha, regression) {
 	this.regression = regression;
 	this.layers     = layers;
