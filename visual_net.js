@@ -1,5 +1,5 @@
 // MIT License
-// Sam Griesemer
+// Sam Griesemer (typeload.com)
 
 layers     = [X.cols(),5,y.cols()];
 epsilon    = 1.0;
