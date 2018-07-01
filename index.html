@@ -1,0 +1,52 @@
+`<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/utils/default/default.css"></link>
+    <link rel="stylesheet" type="text/css" href="nn.css"></link>
+  
+    <title>Neural Network Visualization</title>
+  </head>
+  <body>
+    <div id='content'>
+      <h1>Neural Network Visualization</h1>
+      <h3>Showing activations of data point:</h3>
+
+      <select id="act"></select>
+      <button onclick="reset()">Reset Network</button><br><br>
+       
+      <i>
+        <ul style="display:inline-block;">
+          <li><label>Layers      </label><input type="text" id="layers" value="" size=5></li>
+          <li><label>Epsilon     </label><input type="text" id="epsilon" value="" size=5></li>
+          <li><label>Alpha       </label><input type="text" id="alpha" value="" size=5></li>
+          <li><label>Batch Size  </label><input type="text" id="batch" value="" size=5></li>
+          <li><label>Updates/loop</label><input type="text" id="iters" value="" size=5></li>
+        </ul>
+      </i>
+      
+      <div id="holder"></div>
+      <p id="loss"></p>
+      <p id="dcount"></p>
+      <i>*blue weights are <span style='color:#d1e4f1'>positive</span>, yellow weights are <span style='color:#f7f00a'>negative</span></i>
+
+      <div class='section'>
+        <h2>Parameters:</h2>
+
+        <div id="txt">
+          <p>Layers       - Controls the architecture of the network. Formatted as follows: [i, h1, ... , hn, o]</p>
+          <p>Epsilon      - Boundary for the random initialization of weights: -e &lt w &lt e </p>
+          <p>Alpha        - Learning rate; controls the amount a gradient can update the network weights</p>
+          <p>Batch Size   - Size of data batch when batch gradient descent is performed</p>
+          <p>Updates/loop - Number of gradient descent loops performed each visualization update loop.
+                (Processing can only update the visualization so fast, so cramming numerous GD updates in each loop makes things quicker)</p>
+          <a href='https://github.com/typeload/nn'><b>Github</b></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sylvester/0.1.3/sylvester.js"></script>
+    <script src="nn.js"></script>
+    <script src="visual_net.js"></script>
+  </body>
+</html
