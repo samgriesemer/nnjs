@@ -58,7 +58,6 @@ NN.prototype.fit = function(X, Y, predict) {
     w_grad[i] = w_grad[i].x(1/X.rows());
     // w_grad[i] = this.lambda   // regularization
   }
-
   return w_grad;
 }
 
@@ -97,7 +96,6 @@ NN.prototype.run = function(X, Y, batch_size, iters) {
 }
 
 // matrix helper functions
-
 function add_s(m, s) {
   r = m.map(function(x) { return x+s; });
   return r;
