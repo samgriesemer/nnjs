@@ -1,6 +1,6 @@
 # Neural Network Visualization in Javascript
 
-This is a Javascript implementation of a vanilla neural network. I put this together to help visualize the neural net training process in a somewhat intuitive manner, all within the browser. As such, visualizaing the neural network as it learns is a somewhat intensive process for the browser and is restricted to relatively simple problems.
+This is a Javascript implementation of a vanilla feedforward neural network. I put this together to help visualize the neural net training process in a somewhat intuitive manner, all within the browser.
 
 ## Demo
 
