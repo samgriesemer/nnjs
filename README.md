@@ -12,7 +12,7 @@ Everything is available in the repo, just fork or clone and open the index.html 
 
 The neural network diagram looks as follows:
 
-<img src="https://samgriesemer.com/utils/resources/nn_explanation.png" width="90%">
+<img src="https://samgriesemer.com/static/global/images/nn_explanation.png" width="90%">
 
 Training options available through the UI:
 
